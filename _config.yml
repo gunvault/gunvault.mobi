@@ -7,20 +7,20 @@ ios_app_country                           : us                                  
 
 appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
 playstore_link                            :                                           # Enter Google Play Store URL.
-presskit_download_link                    : https://emilbaehr.com                                          # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
+presskit_download_link                    :                                           # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 
 app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Write a short tagline for your app.
+app_description                           : A firearm inventory.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
 
 
 # Information About Yourself
-your_name                                 : Villy G Consulting, LLC                                
+your_name                                 : VillyG                                
 your_link                                 : https://villyg.com                     
 your_city                                 :                             
 email_address                             : 
@@ -38,54 +38,60 @@ mastodon_link                             :
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : GitHub Pages Jekyll Theme
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
-    fontawesome_icon_name                 : magic
+  - title                                 : Firearms
+    description                           : Keep a detailed digital record of all your firearms, including serial numbers, specs, and purchase information, for easy access and organization.
+    fontawesome_icon_name                 : star
     
-  - title                                 : iPhone Device Preview
-    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
-    fontawesome_icon_name                 : mobile
-
-  - title                                 : Video Support
-    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
-    fontawesome_icon_name                 : play-circle
-
-  - title                                 : Automatic Icon and Metadata
-    description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
-    fontawesome_icon_name                 : sync
-
-  - title                                 : Easy to Tweak
-    description                           : Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : adjust
-  
-  - title                                 : Feature List
-    description                           : Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
+  - title                                 : Ammo
+    description                           : Track every round you own by caliber, type, and quantity, so you always know exactly what you have in stock and what you need to buy.
     fontawesome_icon_name                 : star
 
-  - title                                 : Smart App Banner
-    description                           : Display a smart app banner on iOS devices.
-    fontawesome_icon_name                 : arrow-alt-circle-down
+  - title                                 : Accessories
+    description                           : Catalog all your firearm accessories — from optics and magazines to holsters and lights—ensuring everything is accounted for and easy to find.
+    fontawesome_icon_name                 : star
 
-  - title                                 : Social Links
-    description                           : Easily add social media accounts and contact info in the footer via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : link
+  - title                                 : Kits
+    description                           : Bundle firearms and accessories into custom kits for specific purposes like a range day, hunting trip, or go-bag.
+    fontawesome_icon_name                 : star
 
-  - title                                 : FontAwesome Support
-    description                           : Pick custom Font Awesome icons for the feature list via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : info-circle
+  - title                                 : Photo Library
+    description                           : Create a comprehensive visual catalog by uploading unlimited photos for each firearm.
+    fontawesome_icon_name                 : star
+  
+  - title                                 : Range Log
+    description                           : Record your shooting sessions with details on firearm performance, ammo used, and personal notes to track your training progress over time.
+    fontawesome_icon_name                 : star
 
-  - title                                 : # New Feature Title
-    description                           : # New Feature Description
-    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
+  - title                                 : Usage Analytics
+    description                           : Visualize your shooting habits and firearm usage with insightful charts and graphs, helping you analyze your training patterns and round counts
+    fontawesome_icon_name                 : star
 
+  - title                                 : PDF Reports
+    description                           : Generate professional PDF reports for insurance, personal records, or legal documentation right from the app
+    fontawesome_icon_name                 : star
 
+  - title                                 : Data Exports
+    description                           : Easily export your complete inventory and log data into CSV files for use in spreadsheets or other applications.
+    fontawesome_icon_name                 : star
+
+  - title                                 : iCloud Sync
+    description                           : Keep your entire database securely backed up and seamlessly synchronized across all your Apple devices.
+    fontawesome_icon_name                 : star
+
+  - title                                 : Customizations
+    description                           : Personalize the app to fit your needs with custom fields, categories, and display options for a truly tailored experience.
+    fontawesome_icon_name                 : star
+
+  - title                                 : Privacy & Security
+    description                           : Protect your sensitive firearm data with robust security features including Face ID, Touch ID, and passcode options.
+    fontawesome_icon_name                 : star
 
 # Theme Settings
 topbar_color                              : "#000000"
 topbar_transparency                       : 0.1
 topbar_title_color                        : "#ffffff"
 
-cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
+cover_image                               : assets/LaunchBackground_1024x1024.png                    # Replace with alternative image path or image URL.
 cover_overlay_color                       : "#363b3d"
 cover_overlay_transparency                : 0.8
 
