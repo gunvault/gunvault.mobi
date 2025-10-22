@@ -18,17 +18,13 @@ Check out the latest updates below.
 - Added ability to record individual ammo transactions for better recordkeeping
 - Minor fixes and improvements.
 
-
+---
 
 ## Version 5.11.0 - 2025-10-19
-<!-- This is the first update to our app. Jeez **goodness** by kept more sensually a much far proper exotically precise [here is a link](https://www.google.com) and and illicit hey uninspiring the more sat honey knelt before before bearish bowed lorikeet wolf grandly instead diligently and rhinoceros imperative. -->
 
-#### What's New
+**What's New**
 - Added ability to explore user, collection, and firearm-level analytics on volume, frequency, intensity, reliability etc. 
 - Minor fixes and improvements.
-
-
-
 
 ---
 
