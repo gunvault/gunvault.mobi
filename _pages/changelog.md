@@ -12,9 +12,16 @@ Check out the latest updates below.
 
 
 ### `Latest`
-# **Version 5.12.0 - 2025-10-22**
+# **Version 5.12.1 - 2025-10-28**
 
 #### What's New
+- Minor fixes and improvements.
+
+---
+
+## Version 5.12.0 - 2025-10-22
+
+**What's New**
 - Added ability to record individual ammo transactions for better recordkeeping
 - Minor fixes and improvements.
 
