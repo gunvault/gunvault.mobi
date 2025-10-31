@@ -14,6 +14,5 @@ Do you have any concerns, recommendations, or feature requests? Your feedback he
 
 # TestFlight
 
-Use the link below to join TestFlight
+Use this [link](https://testflight.apple.com/join/SsmPh4x4) to join TestFlight
 
-https://testflight.apple.com/join/SsmPh4x4
