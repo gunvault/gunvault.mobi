@@ -21,7 +21,7 @@ To maintain and improve the quality and stability of our app, we collect a limit
 We do **not** collect any personal or sensitive information. This includes, but is not limited to:
 
 -   **No Personal Information:** We do not collect your name, email address, phone number, or any other personally identifiable information.
--   **No Firearm Information:** We absolutely do not collect, view, or store any information you enter into the app, such as firearm models, serial numbers, purchase dates, or photos. All data you log in Gun Vault is stored locally and only on your device.
+-   **No Firearm Information:** We absolutely do not collect, view, or store any information you enter into the app, such as firearm models, serial numbers, purchase dates, or photos. All data you log in Gun Vault is stored locally on your device or in your iCloud account if you have opted into it.
 -   **No Precise Location Data:** We do not collect your precise geographic location.
 -   **No Device Identifiers:** We do not collect unique device identifiers such as the Advertising Identifier (IDFA).
 
