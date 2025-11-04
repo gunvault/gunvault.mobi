@@ -12,10 +12,36 @@ Check out the latest updates below.
 
 
 ### `Latest`
-# **Version 5.12.1 - 2025-10-28**
+# **Version 5.14.1 - 2025-11-05**
 
 #### What's New
 - Minor fixes and improvements.
+
+---
+
+## Version 5.14.0 - 2025-11-02
+
+**What's New**
+- Added analytics, crashlytics and remote config
+
+---
+
+## Version 5.13.0 - 2025-10-30
+
+**What's New**
+- Added ability to link range session activities and ammo so that ammo is debited automatically
+- Moved list grouping from tabs to dedicated button
+- Minor fixes and improvemnts
+
+
+---
+
+## Version 5.12.1 - 2025-10-28
+
+**What's New**
+- Added ability to record individual ammo transactions for better recordkeeping
+- Minor fixes and improvements.
+
 
 ---
 
