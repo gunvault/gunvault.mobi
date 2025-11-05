@@ -20,18 +20,18 @@ enable_smart_app_banner                   : true                                
 
 
 # Information About Yourself
-your_name                                 : VillyG                                
-your_link                                 : https://villyg.com                     
+your_name                                 : GunVault                                
+your_link                                 : https://gunvault.mobi                    
 your_city                                 :                             
-email_address                             : 
-linkedin_username                         : villyg                                          
+email_address                             : support@gunvault.mobi
+linkedin_username                         :                                           
 linkedin_company                          :                                           
 facebook_username                         :                                           
 instagram_username                        : 
-twitter_username                          : villyg
-github_username                           : villyg
+twitter_username                          : 
+github_username                           : gunvault
 youtube_username                          :
-mastodon_link                             : 
+mastodon_link                             : https://mastodon.social/@gunvault
 
 
 
