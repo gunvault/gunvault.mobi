@@ -12,7 +12,7 @@ Check out the latest updates below.
 
 
 ### `Latest`
-# **Version 5.16.- - 2025-11-13**
+# **Version 5.16.0 - 2025-11-13**
 
 #### What's New
 - Added ability to select iCloud sync strategy
