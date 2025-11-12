@@ -12,10 +12,28 @@ Check out the latest updates below.
 
 
 ### `Latest`
-# **Version 5.14.1 - 2025-11-05**
+# **Version 5.16.- - 2025-11-13**
 
 #### What's New
-- Minor fixes and improvements.
+- Added ability to select iCloud sync strategy
+
+---
+
+## Version 5.15.3 - 2025-11-11
+- Added ability to clean up duplicate transactions
+
+---
+
+## Version 5.15.1 - 2025-11-09
+- Fixed sync issue
+
+---
+
+## Version 5.15.0 - 2025-11-07
+
+**What's New**
+- Added Ammo level analytics
+- Minor fixes and improvemnts
 
 ---
 
