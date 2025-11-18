@@ -12,9 +12,26 @@ Check out the latest updates below.
 
 
 ### `Latest`
-# **Version 5.16.0 - 2025-11-13**
+# **Version 5.18.0 - 2025-11-20**
 
 #### What's New
+
+- Updated report styling
+- Added catalog report
+- Added accessory report
+
+---
+
+## **Version 5.17.0 - 2025-11-17**
+
+- Consolidated analytics in a single module
+- Grouped range sessions by date
+- Grouped maintenance sessions by date
+- Minor fixes and improvements
+
+---
+
+## **Version 5.16.0 - 2025-11-13**
 - Added ability to select iCloud sync strategy
 
 ---
