@@ -2,6 +2,7 @@
 layout: page
 title: Privacy Policy
 include_in_header: false
+order: 3
 ---
 **Effective Date:** October 30, 2025
 **App Name:** Gun Vault
