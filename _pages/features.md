@@ -6,7 +6,6 @@ permalink: /features/
 order: 2
 ---
 
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
 <style>
 /* ===========================
@@ -65,13 +64,11 @@ order: 2
    TAB CONTENT WRAPPER
    =========================== */
 .tabcontent {
-  display: none; /* Hidden by default, jQuery will fade it in */
+  display: none; 
   padding: 10px 0px;
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* Note: Removed @keyframes fadeEffect as jQuery .fadeIn() handles this now */
 
 /* ===========================
    FEATURE GRID LAYOUT
@@ -144,6 +141,7 @@ order: 2
   border: 1px solid #eee;
   transition: transform 0.3s ease;
   background-color: #fff;
+  cursor: zoom-in; /* Indicates clickable */
 }
 
 .app-screenshot:hover {
@@ -173,6 +171,57 @@ order: 2
     width: auto;
   }
 }
+
+/* ===========================
+   LIGHTBOX / MODAL STYLES
+   =========================== */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 10000; 
+  left: 0; top: 0;
+  width: 100%; height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9); 
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 85vh;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px; right: 35px;
+  color: #f1f1f1;
+  font-size: 40px; font-weight: bold;
+  cursor: pointer; z-index: 10001;
+  transition: 0.3s;
+}
+.close-btn:hover { color: #bbb; }
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute; top: 50%;
+  padding: 16px; margin-top: -50px;
+  color: white; font-weight: bold; font-size: 30px;
+  transition: 0.3s; user-select: none;
+  border-radius: 3px;
+}
+.next { right: 0; border-radius: 3px 0 0 3px; }
+.prev { left: 0; border-radius: 0 3px 3px 0; }
+.prev:hover, .next:hover { background-color: rgba(255,255,255,0.1); }
+
+#caption {
+  text-align: center; color: #ccc; padding: 10px 0; font-size: 18px;
+}
 </style>
 
 <div class="tab">
@@ -197,7 +246,9 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-      <img src="/assets/images/Guns_List.png" alt="Gun List Interface" class="app-screenshot">
+      <img src="/assets/images/Guns_List.jpg" alt="Gun List Interface" class="app-screenshot">
+      <img src="/assets/images/Guns_Gallery.jpg" alt="Gun Gallery View" class="app-screenshot">
+      <img src="/assets/images/Guns_Details.jpg" alt="Gun Details Screen" class="app-screenshot">      
     </div>
   </div>
 
@@ -212,8 +263,8 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-      <img src="/assets/images/Guns_Gallery.png" alt="Gun Gallery View" class="app-screenshot">
-      <img src="/assets/images/Guns_Details.png" alt="Gun Details Screen" class="app-screenshot">
+      <img src="/assets/images/Ammo_List.jpg" alt="Ammo List Interface" class="app-screenshot">
+
     </div>
   </div>
 </div>
@@ -230,7 +281,7 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-      </div>
+       </div>
   </div>
   <div class="feature-container">
     <div class="feature-text">
@@ -243,7 +294,7 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-      </div>
+       </div>
   </div>
 </div>
 
@@ -258,7 +309,7 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-      </div>
+       </div>
   </div>
   <div class="feature-container">
     <div class="feature-text">
@@ -271,7 +322,7 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-      </div>
+       </div>
   </div>
 </div>
 
@@ -286,7 +337,7 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-      </div>
+       </div>
   </div>
   <div class="feature-container">
     <div class="feature-text">
@@ -299,7 +350,7 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-      </div>
+       </div>
   </div>
 </div>
 
@@ -361,30 +412,30 @@ order: 2
   </div>
 </div>
 
+<div id="imageModal" class="modal">
+  <span class="close-btn">&times;</span>
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
 <script>
 $(document).ready(function() {
 
-    // Function to switch tabs
+    // ============================
+    // 1. TAB LOGIC
+    // ============================
     function switchTab(tabId) {
-        // Hide all tab contents
         $('.tabcontent').hide();
-        
-        // Remove active class from all buttons
         $('.tablinks').removeClass('active');
-        
-        // Show the specific tab with a nice fade effect
         $('#' + tabId).fadeIn(400);
-        
-        // Add active class to the button that matches this data-tab
         $('.tablinks[data-tab="' + tabId + '"]').addClass('active');
     }
 
-    // Click Handler for Tabs
     $('.tablinks').on('click', function() {
         var tabId = $(this).data('tab');
         switchTab(tabId);
-        
-        // Update URL hash without jumping to the anchor
         if(history.pushState) {
             history.pushState(null, null, '#' + tabId);
         } else {
@@ -392,14 +443,71 @@ $(document).ready(function() {
         }
     });
 
-    // Handle Page Load (Check URL Hash)
+    // Initial Load
     var hash = window.location.hash.substring(1);
     if (hash && $('#' + hash).length) {
         switchTab(hash);
     } else {
-        // Default Open "Organize" if no hash
         switchTab('Organize');
     }
+
+    // ============================
+    // 2. SLIDESHOW / LIGHTBOX LOGIC
+    // ============================
+    var $galleryImages; // Stores images of current tab
+    var currentIndex = 0;
+
+    // Open Modal on Click
+    $('.app-screenshot').on('click', function() {
+        // Find images ONLY in the current visible tab
+        var $parentTab = $(this).closest('.tabcontent');
+        $galleryImages = $parentTab.find('.app-screenshot');
+        
+        // Find index of clicked image
+        currentIndex = $galleryImages.index(this);
+        
+        updateModal();
+        $('#imageModal').fadeIn(300);
+    });
+
+    // Close Modal (Click X or Outside)
+    $('.close-btn, .modal').on('click', function(e) {
+        if (e.target !== this) return; // Don't close if clicking the image
+        $('#imageModal').fadeOut(300);
+    });
+
+    // Navigate Next/Prev
+    $('.next').on('click', function(e) {
+        e.stopPropagation(); // Prevent closing modal
+        changeSlide(1);
+    });
+    $('.prev').on('click', function(e) {
+        e.stopPropagation();
+        changeSlide(-1);
+    });
+
+    function changeSlide(direction) {
+        currentIndex += direction;
+        // Loop logic
+        if (currentIndex >= $galleryImages.length) currentIndex = 0;
+        if (currentIndex < 0) currentIndex = $galleryImages.length - 1;
+        updateModal();
+    }
+
+    function updateModal() {
+        var $img = $galleryImages.eq(currentIndex);
+        $('#modalImg').attr('src', $img.attr('src'));
+        $('#caption').text($img.attr('alt'));
+    }
+
+    // Keyboard Navigation
+    $(document).on('keydown', function(e) {
+        if ($('#imageModal').is(':visible')) {
+            if (e.key === "Escape") $('#imageModal').fadeOut(300);
+            if (e.key === "ArrowRight") changeSlide(1);
+            if (e.key === "ArrowLeft") changeSlide(-1);
+        }
+    });
 
 });
 </script>
