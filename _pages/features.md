@@ -296,8 +296,9 @@ order: 2
         <li><strong>Visual Timeline:</strong> Scroll through a history of your range visits to see your frequency and training consistency.</li>
       </ul>
     </div>
-    <div class="feature-visual">
-       </div>
+    <div class="feature-visual">   
+
+    </div>
   </div>
 </div>
 
@@ -312,6 +313,9 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
+      <img src="/assets/images/Maintenance_Sessions_List.jpeg" alt="Maintenance Sessions" class="app-screenshot">
+      <img src="/assets/images/Maintenance_Sessions_Details.jpeg" alt="Maintenance Session Details" class="app-screenshot">
+      <img src="/assets/images/Maintenance_Sessions_Upsert.jpeg" alt="Maintenance Session Upsert" class="app-screenshot">         
        </div>
   </div>
   <div class="feature-container">
@@ -325,6 +329,9 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
+      <img src="/assets/images/Collection_Health.jpeg" alt="Collection Health" class="app-screenshot">
+      <img src="/assets/images/Gun_Health_Healthy.jpeg" alt="Gun Health Healthy" class="app-screenshot">
+      <img src="/assets/images/Gun_Health_Unhealthy.jpeg" alt="Gun Health Unhealthy" class="app-screenshot">        
        </div>
   </div>
 </div>
@@ -340,6 +347,9 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
+      <img src="/assets/images/Collection_Usage_Stats.jpeg" alt="Collection-level Usage Dashboard" class="app-screenshot">
+      <img src="/assets/images/Collection_Usage_Stats_2.jpeg" alt="Collection-level Dashboard" class="app-screenshot">
+      <img src="/assets/images/Gun_Usage_Stats.jpeg" alt="Individual Gun Stats" class="app-screenshot">       
        </div>
   </div>
   <div class="feature-container">
@@ -353,6 +363,8 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
+          <img src="/assets/images/User_Stats.jpeg" alt="User Dashboard" class="app-screenshot">
+          <img src="/assets/images/Ammo_Usage_Stats.jpg" alt="Individual Ammo Stats" class="app-screenshot">          
        </div>
   </div>
 </div>
@@ -369,6 +381,9 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
+          <img src="/assets/images/Reports_Report_List.jpeg" alt="Report List" class="app-screenshot">
+          <img src="/assets/images/Reports_Gun_Catalog_Cover.jpeg" alt="Gun Catalog Cover" class="app-screenshot">
+          <img src="/assets/images/Reports_Gun_Catalog_Item.jpeg" alt="Gun Catalog Item" class="app-screenshot">
        </div>
   </div>
   <div class="feature-container">
@@ -382,6 +397,9 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
+          <img src="/assets/images/Reports_Gun_Inventory.jpeg" alt="Gun Inventory" class="app-screenshot">
+          <img src="/assets/images/Reports_Ammo_List.jpeg" alt="Ammo Inventory" class="app-screenshot">
+          <img src="/assets/images/Exports_CSV_List.jpeg" alt="CSV Exports" class="app-screenshot">    
        </div>
   </div>
 </div>
