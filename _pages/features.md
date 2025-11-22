@@ -246,9 +246,9 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-      <img src="/assets/images/Guns_List.jpg" alt="Gun List Interface" class="app-screenshot">
-      <img src="/assets/images/Guns_Gallery.jpg" alt="Gun Gallery View" class="app-screenshot">
-      <img src="/assets/images/Guns_Details.jpg" alt="Gun Details Screen" class="app-screenshot">      
+      <img src="/assets/images/Guns_List.jpeg" alt="Gun List Interface" class="app-screenshot">
+      <img src="/assets/images/Guns_Gallery.jpeg" alt="Gun Gallery View" class="app-screenshot">
+      <img src="/assets/images/Guns_Details.jpeg" alt="Gun Details Screen" class="app-screenshot">      
     </div>
   </div>
 
@@ -263,7 +263,7 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-      <img src="/assets/images/Ammo_List.jpg" alt="Ammo List Interface" class="app-screenshot">
+      <img src="/assets/images/Ammo_List.jpeg" alt="Ammo List Interface" class="app-screenshot">
 
     </div>
   </div>
@@ -281,7 +281,10 @@ order: 2
       </ul>
     </div>
     <div class="feature-visual">
-       </div>
+      <img src="/assets/images/Range_Session_List.jpeg" alt="Range Sessions" class="app-screenshot">
+      <img src="/assets/images/Range_Session_Details.jpeg" alt="Range Session Details" class="app-screenshot">
+      <img src="/assets/images/Range_Drills_List.jpeg" alt="Drills List" class="app-screenshot">         
+    </div>
   </div>
   <div class="feature-container">
     <div class="feature-text">
