@@ -6,6 +6,8 @@ permalink: /features/
 order: 2
 ---
 
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
 <style>
 /* ===========================
    TAB NAVIGATION STYLES
@@ -63,36 +65,27 @@ order: 2
    TAB CONTENT WRAPPER
    =========================== */
 .tabcontent {
-  display: none;
+  display: none; /* Hidden by default, jQuery will fade it in */
   padding: 10px 0px;
-  animation: fadeEffect 0.4s;
-  max-width: 1200px; /* Wide enough for side-by-side layout */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-@keyframes fadeEffect {
-  from {opacity: 0; transform: translateY(5px);}
-  to {opacity: 1; transform: translateY(0);}
-}
+/* Note: Removed @keyframes fadeEffect as jQuery .fadeIn() handles this now */
 
 /* ===========================
-   FEATURE GRID LAYOUT (UPDATED)
+   FEATURE GRID LAYOUT
    =========================== */
 .feature-container {
   display: flex;
   flex-wrap: wrap;
-  
-  /* FIX 1: Vertically center text. 
-     This solves the "Short Text / Tall Image" whitespace issue. */
   align-items: center; 
-  
-  gap: 60px; /* Generous gap between text and phone */
+  gap: 60px;
   margin-bottom: 80px;
   padding-bottom: 40px;
   border-bottom: 1px solid #f5f5f5;
 }
 
-/* Optional: Use this class <div class="feature-container reverse"> to flip text/image side */
 .feature-container.reverse {
   flex-direction: row-reverse;
 }
@@ -103,12 +96,10 @@ order: 2
 }
 
 .feature-text {
-  /* Text takes up less space, allowing images to breathe */
   flex: 1 1 350px; 
   min-width: 300px;
 }
 
-/* Typography within features */
 .feature-text h3 {
   margin-top: 0;
   color: #333;
@@ -117,7 +108,6 @@ order: 2
 }
 
 .feature-text p {
-  /* font-size: 1.1rem; */
   line-height: 1.6;
   color: #444;
   margin-bottom: 20px;
@@ -135,14 +125,10 @@ order: 2
 }
 
 .feature-visual {
-  /* FIX 2: Make visual container wider (500px basis).
-     This encourages the browser to put 2 phones side-by-side
-     instead of stacking them vertically. */
   flex: 2 1 500px;
-  
   display: flex;
   gap: 25px;
-  justify-content: center; /* Centers 1 image, or centers the group of 2 */
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -151,7 +137,6 @@ order: 2
    SCREENSHOT STYLING
    =========================== */
 .app-screenshot {
-  /* FIX 3: Slightly smaller width ensures 2 phones fit on standard laptop screens */
   width: 230px; 
   height: auto;
   border-radius: 24px;
@@ -169,13 +154,13 @@ order: 2
 /* Mobile Adjustments */
 @media (max-width: 900px) {
   .feature-container {
-    flex-direction: column-reverse; /* Images on top, Text on bottom */
+    flex-direction: column-reverse;
     gap: 30px;
     text-align: left;
   }
   
   .feature-container.reverse {
-    flex-direction: column-reverse; /* Keep consistent on mobile */
+    flex-direction: column-reverse;
   }
 
   .feature-visual {
@@ -184,7 +169,6 @@ order: 2
   }
   
   .app-screenshot {
-    /* On mobile, make them small enough to sit side-by-side */
     max-width: 45%; 
     width: auto;
   }
@@ -192,17 +176,16 @@ order: 2
 </style>
 
 <div class="tab">
-  <button class="tablinks main-feature" onclick="openFeature(event, 'Organize')" id="defaultOpen">Organize</button>
-  <button class="tablinks main-feature" onclick="openFeature(event, 'Use')">Use</button>
-  <button class="tablinks main-feature" onclick="openFeature(event, 'Maintain')">Maintain</button>
-  <button class="tablinks main-feature" onclick="openFeature(event, 'Analyze')">Analyze</button>
+  <button class="tablinks main-feature" data-tab="Organize">Organize</button>
+  <button class="tablinks main-feature" data-tab="Use">Use</button>
+  <button class="tablinks main-feature" data-tab="Maintain">Maintain</button>
+  <button class="tablinks main-feature" data-tab="Analyze">Analyze</button>
   
-  <button class="tablinks secondary-feature separator" onclick="openFeature(event, 'Export')">Export</button>
-  <button class="tablinks secondary-feature" onclick="openFeature(event, 'Secure')">Secure</button>
+  <button class="tablinks secondary-feature separator" data-tab="Export">Export</button>
+  <button class="tablinks secondary-feature" data-tab="Secure">Secure</button>
 </div>
 
 <div id="Organize" class="tabcontent">
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Digital Armory</h3>
@@ -218,7 +201,8 @@ order: 2
     </div>
   </div>
 
-  <div class="feature-container reverse"> <div class="feature-text">
+  <div class="feature-container reverse"> 
+    <div class="feature-text">
       <h3>Inventory Management</h3>
       <p>Keep your supplies organized and accessible.</p>
       <ul>
@@ -232,11 +216,9 @@ order: 2
       <img src="/assets/images/Guns_Details.png" alt="Gun Details Screen" class="app-screenshot">
     </div>
   </div>
-
 </div>
 
 <div id="Use" class="tabcontent">
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Range & Training Log</h3>
@@ -250,7 +232,6 @@ order: 2
     <div class="feature-visual">
       </div>
   </div>
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Usage History</h3>
@@ -264,11 +245,9 @@ order: 2
     <div class="feature-visual">
       </div>
   </div>
-
 </div>
 
 <div id="Maintain" class="tabcontent">
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Service Records</h3>
@@ -281,7 +260,6 @@ order: 2
     <div class="feature-visual">
       </div>
   </div>
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Proactive Care</h3>
@@ -295,11 +273,9 @@ order: 2
     <div class="feature-visual">
       </div>
   </div>
-
 </div>
 
 <div id="Analyze" class="tabcontent">
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Collection Analytics</h3>
@@ -312,7 +288,6 @@ order: 2
     <div class="feature-visual">
       </div>
   </div>
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Performance & Insights</h3>
@@ -326,11 +301,9 @@ order: 2
     <div class="feature-visual">
       </div>
   </div>
-
 </div>
 
 <div id="Export" class="tabcontent">
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Reporting Tools</h3>
@@ -344,7 +317,6 @@ order: 2
     <div class="feature-visual">
        </div>
   </div>
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Data Freedom</h3>
@@ -358,11 +330,9 @@ order: 2
     <div class="feature-visual">
        </div>
   </div>
-
 </div>
 
 <div id="Secure" class="tabcontent">
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Privacy by Design</h3>
@@ -376,7 +346,6 @@ order: 2
     <div class="feature-visual">
        </div>
   </div>
-
   <div class="feature-container">
     <div class="feature-text">
       <h3>Data Sovereignty</h3>
@@ -390,50 +359,47 @@ order: 2
     <div class="feature-visual">
        </div>
   </div>
-
 </div>
 
 <script>
-function openFeature(evt, featureName) {
-  var i, tabcontent, tablinks;
-  
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  
-  var targetTab = document.getElementById(featureName);
-  if (targetTab) {
-      targetTab.style.display = "block";
-  }
-  
-  if (evt) {
-    evt.currentTarget.className += " active";
-    if(history.pushState) {
-        history.pushState(null, null, '#' + featureName);
-    } else {
-        location.hash = '#' + featureName;
-    }
-  } else {
-      for (i = 0; i < tablinks.length; i++) {
-          if (tablinks[i].getAttribute('onclick').includes(featureName)) {
-              tablinks[i].className += " active";
-          }
-      }
-  }
-}
+$(document).ready(function() {
 
-document.addEventListener("DOMContentLoaded", function() {
-    var hash = window.location.hash.substring(1); 
-    if (hash && document.getElementById(hash)) {
-        openFeature(null, hash);
-    } else {
-        document.getElementById("defaultOpen").click();
+    // Function to switch tabs
+    function switchTab(tabId) {
+        // Hide all tab contents
+        $('.tabcontent').hide();
+        
+        // Remove active class from all buttons
+        $('.tablinks').removeClass('active');
+        
+        // Show the specific tab with a nice fade effect
+        $('#' + tabId).fadeIn(400);
+        
+        // Add active class to the button that matches this data-tab
+        $('.tablinks[data-tab="' + tabId + '"]').addClass('active');
     }
+
+    // Click Handler for Tabs
+    $('.tablinks').on('click', function() {
+        var tabId = $(this).data('tab');
+        switchTab(tabId);
+        
+        // Update URL hash without jumping to the anchor
+        if(history.pushState) {
+            history.pushState(null, null, '#' + tabId);
+        } else {
+            location.hash = '#' + tabId;
+        }
+    });
+
+    // Handle Page Load (Check URL Hash)
+    var hash = window.location.hash.substring(1);
+    if (hash && $('#' + hash).length) {
+        switchTab(hash);
+    } else {
+        // Default Open "Organize" if no hash
+        switchTab('Organize');
+    }
+
 });
 </script>
