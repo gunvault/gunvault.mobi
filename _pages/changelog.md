@@ -12,9 +12,30 @@ Check out the latest updates below.
 
 
 ### `Latest`
-# **Version 5.18.0 - 2025-11-20**
+# **Version 5.20.0 - 2025-11-25**
 
 #### What's New
+
+- Added Bulgariam, German, and French language support
+- Minor fixes and improvements
+
+---
+
+## **Version 5.19.1 - 2025-11-23**
+
+- Fixed a bug on report not showing even rows
+
+---
+
+## **Version 5.19.0 - 2025-11-22**
+
+- Added ability to quickly record a new ammo transaction from the ammo details view
+- Added ability to quickly record a new range drill from the range session details view
+- Minor fixes and improvements
+
+---
+
+## **Version 5.18.0 - 2025-11-20**
 
 - Updated report styling
 - Added catalog report
