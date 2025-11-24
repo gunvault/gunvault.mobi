@@ -12,9 +12,22 @@ Check out the latest updates below.
 
 
 ### `Latest`
-# **Version 5.20.0 - 2025-11-25**
+
+# **Version 5.21.0 - 2025-11-27**
 
 #### What's New
+
+- Added ability to search gun list
+- Gun details view automatically appears upon new gun insert
+- Accessory details view automatically appears upon new accessory insert
+- Ammo details view automatically appears upon new ammo insert
+- Kit details view automatically appears upon new kit insert
+- Range session details view automatically appears upon new range session insert
+- Drill details view automatically appears upon new drill insert
+- Maintenance session details view automatically appears upon new maintenance session insert
+- Minor fixes and improvements
+
+## **Version 5.20.0 - 2025-11-25**
 
 - Added Bulgariam, German, and French language support
 - Minor fixes and improvements
