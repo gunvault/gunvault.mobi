@@ -27,6 +27,8 @@ Check out the latest updates below.
 - Maintenance session details view automatically appears upon new maintenance session insert
 - Minor fixes and improvements
 
+---
+
 ## **Version 5.20.0 - 2025-11-25**
 
 - Added Bulgariam, German, and French language support
