@@ -1,0 +1,137 @@
+<!-- App Store Reviews Container -->
+<div class="app-store-reviews">
+  <style>
+    /* --- PARENT GRID FIX --- */
+    /* The footer is currently pinned to a specific grid row ('f') in your main CSS. 
+       We must 'un-pin' it so it flows naturally AFTER this reviews block.
+       We use !important to override the main stylesheet.
+    */
+    .container > footer {
+      grid-area: auto !important;     /* Stop forcing it into the 'f' slot */
+      grid-column: 1 / -1 !important; /* Ensure it still spans the full width */
+    }
+
+    /* --- COMPONENT STYLES --- */
+    .app-store-reviews {
+      /* Force this block to span all 12 columns of the parent container */
+      grid-column: 1 / -1;
+      
+      /* Reset box sizing & fonts */
+      box-sizing: border-box;
+      font-size: 1.6rem; 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      
+      width: 100%;
+      margin: 40px auto; 
+      
+      /* LIGHT MODE COLORS */
+      background-color: #f2f2f7; /* Soft light gray background */
+      padding: 20px;
+      border-radius: 12px;
+      color: #1c1c1e; /* Dark text */
+      
+      /* Internal Grid for the review cards */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    /* Reset all children to use border-box */
+    .app-store-reviews * {
+      box-sizing: border-box;
+    }
+
+    .review-card {
+      /* LIGHT MODE CARD */
+      background-color: #ffffff; /* White card */
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Softer shadow for light mode */
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    /* Override your global h3 styles */
+    .review-card h3.review-title {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin: 0;
+      color: #000000; /* Pure black title */
+      line-height: 1.2;
+    }
+
+    .stars {
+      color: #ff9500;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      margin: 5px 0;
+    }
+
+    .review-body {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      color: #3a3a3c; /* Dark gray for readability */
+      margin-top: 10px;
+      flex-grow: 1;
+    }
+    
+    /* Mobile Override */
+    @media (max-width: 600px) {
+      .app-store-reviews {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+
+  <!-- Review 2 -->
+  <div class="review-card">
+    <div class="review-header">
+      <div>
+        <h3 class="review-title">Best Personal Firearm Record</h3>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-body">
+      I have been looking for a simple to use and detailed logging app for my Personal Firearm Record as recommended by the United States Department of Justice. You would think there are many of these apps out there, and there are, but for free apps you can only store two or three of your firearms then you must purchase the paid version. This app (Gun Vault) is completely free and does everything the paid versions do including store pictures! Thank You!
+    </div>
+  </div>
+  
+  <!-- Review 1 -->
+  <div class="review-card">
+    <div class="review-header">
+      <div>
+        <h3 class="review-title">Nice to have</h3>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-body">
+      Dam Good Customer Service! I’ve used this app for a few years now and it only gets better. Very easy to use, you can make how you like and if you have any problems they jump on it fast to help out. The app rocks
+    </div>
+  </div>
+
+
+
+
+  <!-- Review 2 -->
+  <div class="review-card">
+    <div class="review-header">
+      <div>
+        <h3 class="review-title">Très bonne application</h3>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-body">
+Je suis très satisfait de cette application qui correspond tout à fait à ce dont j’ai besoin. Simple et bien réalisée, toutes les fonctions essentielles sont là (même plus). Bonne ergonomie et suivi du développeur pour les mises à jour. Prix très raisonnable, ce qui est rare en ce moment. Je recommande.
+    </div>
+  </div>
+
+</div>
