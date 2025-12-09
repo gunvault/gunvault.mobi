@@ -2,7 +2,7 @@
 layout: page
 title: About
 include_in_header: true
-order: 1
+order: 2
 ---
 
 # GunVault: Your Ultimate Firearms Companion

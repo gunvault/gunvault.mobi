@@ -3,7 +3,7 @@ layout: page
 title: Features
 include_in_header: true
 permalink: /features/
-order: 2
+order: 3
 ---
 
 
