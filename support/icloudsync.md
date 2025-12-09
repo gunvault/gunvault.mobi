@@ -49,7 +49,8 @@ When you disable iCloud Sync:
 
 ## Sync Flow Diagram
 
-```mermaid
+
+<pre class="mermaid">
 flowchart TD
 
     A[User Toggles iCloud Sync ON] --> B{Choose Sync Method}
@@ -65,4 +66,5 @@ flowchart TD
     A2[User Toggles Sync OFF] --> G[Disable Sync<br/>• Load Local Container<br/>• Keep Both Local + Cloud Data As-Is]
     G --> H[App Runs in Local-Only Mode]
 
-```
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
