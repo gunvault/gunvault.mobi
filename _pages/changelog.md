@@ -14,9 +14,15 @@ Check out the latest updates below.
 
 ### `Latest`
 
-# **Version 5.21.0 - 2025-11-27**
+# **Version 5.22.0 - 2026-01-04**
 
 #### What's New
+
+- Added ability to record serial number, manufacture date, purchase date, purchase price, estimated value
+
+---
+
+## **Version 5.21.0 - 2025-11-27**
 
 - Added ability to search gun list
 - Gun details view automatically appears upon new gun insert
