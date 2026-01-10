@@ -14,9 +14,23 @@ Check out the latest updates below.
 
 ### `Latest`
 
-# **Version 5.22.0 - 2026-01-04**
+# **Version 5.25.0 - 2026-01-10**
 
 #### What's New
+
+- Added ability to export accessories to CSV
+- Added ability to record accessory note
+
+---
+
+## **Version 5.23.0 - 2026-01-08**
+
+- Added ability to move image around when zoomed
+- Added total estimated values to list
+
+---
+
+## **Version 5.22.0 - 2026-01-04**
 
 - Added ability to record serial number, manufacture date, purchase date, purchase price, estimated value
 
