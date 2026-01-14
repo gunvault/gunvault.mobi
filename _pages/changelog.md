@@ -42,7 +42,7 @@ Check out the latest updates below.
 
 ---
 
-<details>
+<details markdown="1">
   <summary><b>Previous versions</b></summary>
 
   ## **Version 5.21.0 - 2025-11-27**
