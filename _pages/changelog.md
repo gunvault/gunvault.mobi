@@ -41,8 +41,8 @@ Check out the latest updates below.
 - Added ability to record serial number, manufacture date, purchase date, purchase price, estimated value
 
 ---
-
-<details markdown="1">
+{% raw %}
+<details>
   <summary><b>Previous versions</b></summary>
 
   ## **Version 5.21.0 - 2025-11-27**
@@ -412,3 +412,4 @@ Check out the latest updates below.
 
 
 </details>
+{% endraw %}
