@@ -14,9 +14,15 @@ Check out the latest updates below.
 
 ### `Latest`
 
-# **Version 5.25.0 - 2026-01-10**
+# **Version 5.25.0 - 2026-01-20**
+
+- Added ability to attach photos to accessories
 
 #### What's New
+
+---
+
+## **Version 5.24.0 - 2026-01-10**
 
 - Added ability to export accessories to CSV
 - Added ability to record accessory note
