@@ -16,9 +16,9 @@ Check out the latest updates below.
 
 # **Version 5.25.0 - 2026-01-20**
 
-- Added ability to attach photos to accessories
-
 #### What's New
+
+- Added ability to attach photos to accessories
 
 ---
 
