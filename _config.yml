@@ -149,3 +149,7 @@ collections:
 
 # Markdown rendering
 markdown: kramdown
+
+url: "https://gunvault.mobi" 
+plugins:
+  - jekyll-sitemap
