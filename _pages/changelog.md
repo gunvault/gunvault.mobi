@@ -14,9 +14,21 @@ Check out the latest updates below.
 
 ### `Latest`
 
-# **Version 5.25.0 - 2026-01-20**
-
 #### What's New
+
+# **Version 5.26.0 - 2026-01-26**
+
+- Added ability to view all kits a gun is part of.
+- Added ability to store sale date and sale price for gun.
+- Gun details view now shows estimated value for each kit gun is a part of
+- Added ability to view all kits an accessory is a part of.
+- Accessory details view now shows estimated value for each kit accessory is a part of.
+- Kit now shows total estimated value of all included components
+- Minor fixes and improvements.
+
+---
+
+## **Version 5.25.0 - 2026-01-20**
 
 - Added ability to attach photos to accessories
 
