@@ -153,3 +153,4 @@ markdown: kramdown
 url: "https://gunvault.mobi" 
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
