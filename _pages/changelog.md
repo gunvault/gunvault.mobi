@@ -16,7 +16,13 @@ Check out the latest updates below.
 
 #### What's New
 
-# **Version 5.26.0 - 2026-01-26**
+# **Version 5.27.0 - 2026-02-09**
+- Kit details view now shows photos of all kit components.
+- Fixed bug that prevented Ammo Transaction sync
+
+---
+
+## **Version 5.26.0 - 2026-01-26**
 
 - Added ability to view all kits a gun is part of.
 - Added ability to store sale date and sale price for gun.
