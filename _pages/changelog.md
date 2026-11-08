@@ -16,7 +16,21 @@ Check out the latest updates below.
 
 #### What's New
 
-# **Version 5.27.0 - 2026-02-09**
+# **Version 5.30.0 - 2026-10-30**
+- Added ability to generate range sessions reports as PDF
+- Added ability to filter ammo to selected gun
+- Added ability to enter rounds directly
+
+---
+
+## **Version 5.28.0 - 2026-09-15**
+
+- Range session export as CSV
+
+---
+
+## **Version 5.27.0 - 2026-02-29**
+
 - Kit details view now shows photos of all kit components.
 - Fixed bug that prevented Ammo Transaction sync
 
